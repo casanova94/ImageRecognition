@@ -1,0 +1,36 @@
+ Autor: Luis Angel Casanova Pech
+
+ Para ejecutar el clasificador se debe llamar al script interfaz.m desde
+ la ventana de comandos de matlab.
+
+ Pasos para clasificar:
+ *Clasificación de una imagen simple
+ 1 - Una vez abierta la interfaz se debe de presionar el botón 'Cargar',
+ se mostrará una ventana de selección, seleccionar la imagen a clasificar.
+ 2 - Presionar el botón clasificar, se despliegará el resultado de la
+ clasificación en un cuadro de texto.
+
+ *Clasificar un conjunto de imagenes:
+ 1 - En el directorio del programa se encuentra una carpeta llamada
+ OtolitosGroup, las imagenes contenidas en esta carpeta serán
+ clasificadas por lo que antes de iniciar la clasificación debe almacenar
+ las imagenes en esta carpeta.
+ 2 - Presionar el botón Cargar Datos,los datos dentro de la carpeta
+ OtolitosGroup serán procesados y se obtendrán los descriptores. Nota: se
+ mostrará un cuadro de texto indicando que se han terminado de cargar los
+ datos a clasificar.
+ 3 - Presionar el botón clasificar, se desplegará la lista del comjunto
+ de imagenes con el resultado de la clasificación.
+
+
+ Observación: El botón 'Entrenar Red' lee los datos almacenados en
+ DataBase.xlsx, genera una red neruronal SOM y la entrena. Sin embargo  el
+ software trabaja con una red neuronal entrenada previamente, la cual se
+ importa al ejecutar el programa de manera automática. No es necesario presionar 
+'Entrenar Red'.
+
+ Nota: Para la ejecución del software en otro computador es necesario
+ reescribir los directorios donde se encuentra el proyecto. El código
+ reescribir se encuentra en los scripts clasSet.m (lineas 3,4 y 5) y
+ loadData.m (lineas 2,3 y 4). Se debe actualizar estos directorios con el
+ nuevo directorio donde está almacenado el proyecto.
